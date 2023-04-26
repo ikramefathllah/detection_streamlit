@@ -5,7 +5,7 @@ import torch
 from PIL import Image
 from pathlib import Path
 # Chemin vers le modèle YOLOv5
-model_path = Path('D:/Users/hp/Downloads/best_panel.pt').resolve()
+model_path = Path('model_paneau.pt').resolve()
 
 # Charger le modèle
 model = torch.hub.load('ultralytics/yolov5', 'custom', path=str(model_path))
