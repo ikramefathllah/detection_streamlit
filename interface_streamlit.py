@@ -1,4 +1,6 @@
-#from turtle import width
+import subprocess
+subprocess.call(['pip', 'install', '-r', 'https://raw.githubusercontent.com/ikramefathllah/detection_streamlit/requirements.txt'])
+
 from unittest import result
 import streamlit as st
 import torch
