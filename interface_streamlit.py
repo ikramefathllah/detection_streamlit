@@ -1,5 +1,3 @@
-#import subprocess
-#subprocess.call(['pip', 'install', '-r', 'https://github.com//ikramefathllah/detection_streamlit/requirements.txt'])
 from unittest import result
 import streamlit as st
 import torch
