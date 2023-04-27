@@ -4,10 +4,10 @@ import torch
 from PIL import Image
 from pathlib import Path
 # Chemin vers le modèle YOLOv5
-model_path = 'model_paneau.pt'
+model_path = Path('model_paneau.pt')
 
 # Charger le modèle
-model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path,force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path=str(model_path),force_reload=True)
 
 names=['danger', 'no_entry', 'no_parking', 'no_stop', 'no_u_turn', 'parking', 'pedestrian', 'round', 'speed_limit_100_ar', 'speed_limit_100_en', 'speed_limit_120_ar', 'speed_limit_120_en', 'speed_limit_15_en', 'speed_limit_20_en', 'speed_limit_30_ar', 'speed_limit_30_en', 'speed_limit_40_en', 'speed_limit_50_ar', 'speed_limit_50_en', 'speed_limit_5_en', 'speed_limit_60_ar', 'speed_limit_60_en', 'speed_limit_70_ar', 'speed_limit_70_en', 'speed_limit_80_ar', 'speed_limit_80_en', 'speed_limit_90_ar', 'speed_limit_90_en', 'speed_limit_90', 'stop', 'traffic_light', 'u_turn']
 
