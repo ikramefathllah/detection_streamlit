@@ -79,7 +79,7 @@ def main():
     
     with col1:
         # Ajouter une zone pour la sélection de l'image
-        st.markdown("<div style='background-color: " + col_bg_color + "; padding: 10px; border-radius: 10px;text-align:center;'>"
+        st.markdown("<div style='background-color: " + bg_color + "; padding: 10px; border-radius: 10px;text-align:center;'>"
                     "<h3>L'image choisie</h3>"
                     "</div>", unsafe_allow_html=True)
         # Charger l'image sélectionnée
@@ -90,7 +90,7 @@ def main():
         
     # Ajouter une zone pour l'affichage de la prédiction
     with col2:
-        st.markdown("<div style='background-color: " + col_bg_color + "; padding: 10px; border-radius: 10px;text-align:center;'>"
+        st.markdown("<div style='background-color: " + bg_color + "; padding: 10px; border-radius: 10px;text-align:center;'>"
                     "<h3>L'image prédite</h3>"
                     "<div id='prediction_output'></div>"
                     "</div>", unsafe_allow_html=True)
@@ -107,7 +107,7 @@ def main():
         else:
                     st.warning("Veuillez sélectionner une image avant de prédire.")
     if image_file is not None: 
-        st.markdown("<div style='background-color: " + col_bg_color + "; padding: 10px; border-radius: 10px;text-align:center'>"
+        st.markdown("<div style='background-color: " + bg_color + "; padding: 10px; border-radius: 10px;text-align:center'>"
                     "<h3>Le résultat de la prédiction</h3>"
                     "<div id='prediction_output'></div>"
                     "</div>", unsafe_allow_html=True)
